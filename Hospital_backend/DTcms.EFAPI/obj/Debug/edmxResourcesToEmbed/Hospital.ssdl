@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HospitalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="dt_article_albums">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="channel_id" Type="int" />
+    <Property Name="article_id" Type="int" />
+    <Property Name="thumb_path" Type="nvarchar" MaxLength="255" />
+    <Property Name="original_path" Type="nvarchar" MaxLength="255" />
+    <Property Name="remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="add_time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="dt_channel_article_content">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="site_id" Type="int" Nullable="false" />
+    <Property Name="channel_id" Type="int" Nullable="false" />
+    <Property Name="category_id" Type="int" Nullable="false" />
+    <Property Name="call_index" Type="nvarchar" MaxLength="50" />
+    <Property Name="title" Type="nvarchar" MaxLength="100" />
+    <Property Name="link_url" Type="nvarchar" MaxLength="255" />
+    <Property Name="img_url" Type="nvarchar" MaxLength="255" />
+    <Property Name="seo_title" Type="nvarchar" MaxLength="255" />
+    <Property Name="seo_keywords" Type="nvarchar" MaxLength="255" />
+    <Property Name="seo_description" Type="nvarchar" MaxLength="255" />
+    <Property Name="tags" Type="nvarchar" MaxLength="500" />
+    <Property Name="zhaiyao" Type="nvarchar" MaxLength="255" />
+    <Property Name="content" Type="ntext" />
+    <Property Name="sort_id" Type="int" Nullable="false" />
+    <Property Name="click" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="is_msg" Type="int" Nullable="false" />
+    <Property Name="is_top" Type="int" Nullable="false" />
+    <Property Name="is_red" Type="int" Nullable="false" />
+    <Property Name="is_hot" Type="int" Nullable="false" />
+    <Property Name="is_slide" Type="int" Nullable="false" />
+    <Property Name="is_sys" Type="int" Nullable="false" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="like_count" Type="int" Nullable="false" />
+    <Property Name="add_time" Type="datetime" Nullable="false" />
+    <Property Name="update_time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="dt_channel_article_news">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="site_id" Type="int" Nullable="false" />
+    <Property Name="channel_id" Type="int" Nullable="false" />
+    <Property Name="category_id" Type="int" Nullable="false" />
+    <Property Name="call_index" Type="nvarchar" MaxLength="50" />
+    <Property Name="title" Type="nvarchar" MaxLength="100" />
+    <Property Name="link_url" Type="nvarchar" MaxLength="255" />
+    <Property Name="img_url" Type="nvarchar" MaxLength="255" />
+    <Property Name="seo_title" Type="nvarchar" MaxLength="255" />
+    <Property Name="seo_keywords" Type="nvarchar" MaxLength="255" />
+    <Property Name="seo_description" Type="nvarchar" MaxLength="255" />
+    <Property Name="tags" Type="nvarchar" MaxLength="500" />
+    <Property Name="zhaiyao" Type="nvarchar" MaxLength="255" />
+    <Property Name="content" Type="ntext" />
+    <Property Name="sort_id" Type="int" Nullable="false" />
+    <Property Name="click" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="is_msg" Type="int" Nullable="false" />
+    <Property Name="is_top" Type="int" Nullable="false" />
+    <Property Name="is_red" Type="int" Nullable="false" />
+    <Property Name="is_hot" Type="int" Nullable="false" />
+    <Property Name="is_slide" Type="int" Nullable="false" />
+    <Property Name="is_sys" Type="int" Nullable="false" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="like_count" Type="int" Nullable="false" />
+    <Property Name="add_time" Type="datetime" Nullable="false" />
+    <Property Name="update_time" Type="datetime" />
+    <Property Name="source" Type="nvarchar" MaxLength="50" />
+    <Property Name="author" Type="nvarchar" MaxLength="50" />
+    <Property Name="sub_title" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="dt_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="site_id" Type="int" />
+    <Property Name="group_id" Type="int" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="salt" Type="nvarchar" MaxLength="20" />
+    <Property Name="password" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="20" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="avatar" Type="nvarchar" MaxLength="255" />
+    <Property Name="nick_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="sex" Type="nvarchar" MaxLength="20" />
+    <Property Name="birthday" Type="datetime" />
+    <Property Name="telphone" Type="nvarchar" MaxLength="50" />
+    <Property Name="area" Type="nvarchar" MaxLength="255" />
+    <Property Name="address" Type="nvarchar" MaxLength="255" />
+    <Property Name="qq" Type="nvarchar" MaxLength="20" />
+    <Property Name="msn" Type="nvarchar" MaxLength="100" />
+    <Property Name="amount" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="point" Type="int" />
+    <Property Name="exp" Type="int" />
+    <Property Name="status" Type="tinyint" />
+    <Property Name="reg_time" Type="datetime" />
+    <Property Name="reg_ip" Type="nvarchar" MaxLength="20" />
+    <Property Name="openid" Type="nvarchar" MaxLength="100" />
+    <Property Name="unionid" Type="nvarchar" MaxLength="100" />
+    <Property Name="age" Type="int" />
+    <Property Name="interest" Type="nvarchar" MaxLength="200" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="longitude" Type="float" />
+  </EntityType>
+  <EntityContainer Name="HospitalModelStoreContainer">
+    <EntitySet Name="dt_article_albums" EntityType="Self.dt_article_albums" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dt_channel_article_content" EntityType="Self.dt_channel_article_content" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dt_channel_article_news" EntityType="Self.dt_channel_article_news" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dt_users" EntityType="Self.dt_users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HospitalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="dt_channel_article_content">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="site_id" Type="Int32" Nullable="false" />
+    <Property Name="channel_id" Type="Int32" Nullable="false" />
+    <Property Name="category_id" Type="Int32" Nullable="false" />
+    <Property Name="call_index" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="link_url" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="img_url" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="seo_title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="seo_keywords" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="seo_description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="tags" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="zhaiyao" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sort_id" Type="Int32" Nullable="false" />
+    <Property Name="click" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="is_msg" Type="Int32" Nullable="false" />
+    <Property Name="is_top" Type="Int32" Nullable="false" />
+    <Property Name="is_red" Type="Int32" Nullable="false" />
+    <Property Name="is_hot" Type="Int32" Nullable="false" />
+    <Property Name="is_slide" Type="Int32" Nullable="false" />
+    <Property Name="is_sys" Type="Int32" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="like_count" Type="Int32" Nullable="false" />
+    <Property Name="add_time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="update_time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="dt_channel_article_news">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="site_id" Type="Int32" Nullable="false" />
+    <Property Name="channel_id" Type="Int32" Nullable="false" />
+    <Property Name="category_id" Type="Int32" Nullable="false" />
+    <Property Name="call_index" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="link_url" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="img_url" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="seo_title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="seo_keywords" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="seo_description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="tags" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="zhaiyao" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sort_id" Type="Int32" Nullable="false" />
+    <Property Name="click" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="is_msg" Type="Int32" Nullable="false" />
+    <Property Name="is_top" Type="Int32" Nullable="false" />
+    <Property Name="is_red" Type="Int32" Nullable="false" />
+    <Property Name="is_hot" Type="Int32" Nullable="false" />
+    <Property Name="is_slide" Type="Int32" Nullable="false" />
+    <Property Name="is_sys" Type="Int32" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="like_count" Type="Int32" Nullable="false" />
+    <Property Name="add_time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="update_time" Type="DateTime" Precision="3" />
+    <Property Name="source" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="author" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sub_title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="HospitalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="dt_channel_article_content" EntityType="Self.dt_channel_article_content" />
+    <EntitySet Name="dt_channel_article_news" EntityType="Self.dt_channel_article_news" />
+    <EntitySet Name="dt_article_albums" EntityType="HospitalModel.dt_article_albums" />
+    <EntitySet Name="dt_users" EntityType="HospitalModel.dt_users" />
+  </EntityContainer>
+  <EntityType Name="dt_article_albums">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="channel_id" Type="Int32" />
+    <Property Name="article_id" Type="Int32" />
+    <Property Name="thumb_path" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="original_path" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="remark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="add_time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="dt_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="site_id" Type="Int32" />
+    <Property Name="group_id" Type="Int32" />
+    <Property Name="user_name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="salt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="avatar" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="nick_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="sex" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="birthday" Type="DateTime" Precision="3" />
+    <Property Name="telphone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="area" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="qq" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="msn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="amount" Type="Decimal" Precision="9" Scale="2" />
+    <Property Name="point" Type="Int32" />
+    <Property Name="exp" Type="Int32" />
+    <Property Name="status" Type="Byte" />
+    <Property Name="reg_time" Type="DateTime" Precision="3" />
+    <Property Name="reg_ip" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="openid" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="unionid" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="age" Type="Int32" />
+    <Property Name="interest" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="latitude" Type="Double" />
+    <Property Name="longitude" Type="Double" />
+  </EntityType>
+</Schema>

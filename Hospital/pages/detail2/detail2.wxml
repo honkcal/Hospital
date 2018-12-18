@@ -1,0 +1,96 @@
+<import src="../../wxParse/wxParse.wxml" />
+<scroll-view id="middle_wrap">
+  <view class="index-detail">
+    <view class="detailtopheader">
+      <text class="h2">{{attractiondetail.ChieneseName}}</text>
+      <text class="addressWrap">{{attractiondetail.sub_title}}</text>
+
+      <view class="address" >
+        <text>{{attractiondetail.address}}</text>
+        <!-- <image src="../../images/address.png" style="width:35rpx;height:35rpx;" />
+        <view style="height:35rpx;width:4rpx;margin-left:10rpx;background-color:#999;" />
+        <image type="primary" bindtap="phonecallevent" src="../../images/phone.png" style="width:35rpx;height:35rpx;margin-left:10rpx;"> </image> -->
+      </view>
+      <text class="catWrap" id="category">·{{category}}·</text>
+      <view class="detail-top">
+        <swiper indicator-dots="false" class="index-swiper" autoplay="true" interval="5000" duration="1000">
+          <block wx:for-items="{{attractiondetail.images}}" wx:key="">
+            <swiper-item>
+              <image mode='aspectFill' src="https://guomengtech.com{{item.img_url}}" class="index-img" />
+            </swiper-item>
+          </block>
+        </swiper>
+        <image class="collection-container" mode='aspectFill' src="{{collection?'/images/destinationDetail_favor1_on.png':'/images/destinationDetail_favor1_off.png'}}" bindtap='collectionAction'>
+        </image>
+      </view>
+
+      <view class="smalliconswrap">
+        <view class="coupon-item-bottom">
+
+
+          <view class="coupon-item-bottom1">
+            <image class="img1" src='../../images/time.png'></image>
+            <text> {{attractiondetail.haoshi}}</text>
+          </view>
+
+          <view class="coupon-item-bottom2">
+            <view class="coupon-item-bottom2-img">
+              <image class="img2" src='../../images/calendar.png'></image>
+            </view>
+            <view class="coupon-item-bottom2-text">
+              <text> {{attractiondetail.calendar}}</text>
+            </view>
+          </view>
+
+          <view class="coupon-item-bottom3">
+            <view class="coupon-item-bottom3-img">
+              <image class="img3" src='../../images/payment.png'></image>
+            </view>
+            <view class="coupon-item-bottom3-text">
+              <text>{{attractiondetail.fuwu}}</text>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <view class="swiper-tab">
+      <view class="swiper-tab-list {{currentTab==0 ? 'on0' : ''}}" data-current="0" bindtap="swichNav">介绍</view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on1' : ''}}" data-current="1" bindtap="swichNav">优惠</view>
+    </view>
+    <view class='content'>
+      <view class="jieshao" style="display:{{currentTab==0 ? 'block' : 'none'}}">
+        <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+      </view>
+      <view class="youhui" style="display:{{currentTab==1 ? 'block' : 'none'}}">
+        <view class='coupon-list'>
+          <block wx:for-items="{{list}}" wx:key="">
+            <view class="coupon-item" bindtap='onAddCard' data-id='{{item.card_id}}'>
+              <image class="juan-back" src="../../images/juan-back.png"></image>
+              <text class="card_title">{{item.card_title}}</text>
+              <view class="xuxian" />
+              <text class="mianfei">免费领取</text>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<view class="contact-container">
+  <contact-button type="default-light" size="32" session-from="weapp" />
+</view>
+
+
+<view class='bottom-container' style="bottom:{{isIpx?'34rpx':'0rpx'}}">
+  <view class="collection_button"  bindtap='callPhone'>
+    <image class="call bottom-icon" src="/images/phone-button-icon.png"></image>
+    <view>拨打电话</view>
+  </view>
+  <view class='sharing-button' bindtap='showMap'>
+    <image class="guide bottom-icon" src="/images/location-button-icon.png"></image>
+    <view>开始导航</view>
+  </view>
+
+</view>

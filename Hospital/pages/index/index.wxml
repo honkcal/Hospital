@@ -1,0 +1,24 @@
+<view id="content">
+  <view class="bscroll"></view>
+  <view class="big_title">
+    <text class="big_text">体验皇后镇</text>
+  </view>
+  <view class="jieshao">
+    <text class="jieshao_text">新西兰的皇后镇是一个被南阿尔卑斯山包围的美丽小镇，也是一个依山傍水的美丽城市。</text>
+  </view>
+  <button class="start_location" open-type="getUserInfo" hover-class='none' bindgetuserinfo="bindGetUserInfo">
+    <image src='../../images/start.png'></image>
+  </button>
+  <view class="footer">
+
+
+    <image class="img1" mode='aspectFill' src='../../images/dis.png'></image>
+    <image class="img2" mode='aspectFill' src='../../images/logo2.png'></image>
+  </view>
+  <view class="footer1">
+  <navigator target="miniProgram" open-type="navigate" app-id="wxae5205c0ff08a0fe" 
+path="pages/index/index" extra-data="" version="release" >  
+  <image class="imgrotorua" mode='aspectFill' src='../../images/rotorua.png'></image></navigator>
+  </view>
+
+</view>

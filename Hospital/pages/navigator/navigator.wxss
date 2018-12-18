@@ -1,0 +1,106 @@
+.swiper-tab {
+    margin-top: 8rpx;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    line-height: 80rpx;
+    display: flex;
+}
+
+.navigator {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#map4select {
+  width: 100vw;
+  flex: 1;
+}
+.cover-location{
+  position: absolute;
+  right: 20rpx;
+  bottom: 50rpx;
+  width: 60rpx;
+  height: 60rpx
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  width: 33.33%;
+  color: #333;
+}
+
+.on0 {
+  color: #1296db;
+  border-bottom: 5rpx solid #1296db;
+}
+
+.on1 {
+  color: #1296db;
+  border-bottom: 5rpx solid #1296db;
+}
+
+.on2 {
+  color: #1296db;
+  border-bottom: 5rpx solid #1296db;
+}
+
+.swiper-box{
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  }
+
+.coupon-list {
+  margin-top: 15rpx;
+  background-color: #fff;
+  height: 245rpx;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.coupon-item {
+  background: #fff;
+  width: 56vw;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-left: 0.5rpx solid lightgray;
+  border-right: 0.5rpx solid lightgray;
+}
+
+.coupon-logo {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 10rpx;
+  border-radius: 10%;
+}
+
+.coupon-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 25rpx;
+}
+
+.list-info-tag{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  width: 42rpx;
+  height: 42rpx;
+}

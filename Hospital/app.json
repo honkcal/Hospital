@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index4/index4",
+    "pages/logs/logs",
+    "pages/my2/my2",
+    "pages/detail2/detail2",
+    "pages/detail_content/detail_content",
+    "pages/navigator/navigator"
+  ],
+  "tabBar": {
+
+    "color": "#666666",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index4/index4",
+        "text": "发现",
+        "iconPath": "images/home-g.png",
+        "selectedIconPath": "images/home-b.png"
+      },
+      {
+        "pagePath": "pages/navigator/navigator",
+        "text": "地图",
+        "iconPath": "images/map-g.png",
+        "selectedIconPath": "images/map-b.png"
+      },
+      {
+        "pagePath": "pages/my2/my2",
+        "text": "我的",
+        "iconPath": "images/mine-g.png",
+        "selectedIconPath": "images/mine-b.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "看病小助手",
+    "navigationBarTextStyle": "black"
+  }
+}

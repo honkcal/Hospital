@@ -1,0 +1,135 @@
+/**app.wxss**/
+@import "/wxParse/wxParse.wxss";
+@import "dist/index.wxss";
+
+.container {
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.topnav_lon.bottomnav .nav_scroll image {
+    vertical-align: middle;
+}
+
+.topnav_lon.bottomnav {
+    background: #4f4f4f;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+    width: calc(100% - 60rpx);
+    padding: 0 30rpx;
+    height: 56px;
+    vertical-align: middle;
+}
+
+.topnav_lon.bottomnav .nav_scroll view.active {
+    border-top: 2px solid #fff;
+    padding-top: 2px;
+}
+
+.topnav_lon.bottomnav .nav_scroll view.active text {
+    color: #fff;
+    padding-top: 3px;
+}
+
+.topnav_lon.bottomnav .nav_scroll text {
+    color: #fff;
+    padding: 3px 0 0 0;
+}
+
+.topnav_lon.bottomnav .nav_scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: calc(100% - 12rpx);
+    height: 100rpx;
+    padding: 0 6rpx;
+}
+
+.topnav_lon.bottomnav .nav_scroll view {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    height: calc(100rpx - 20rpx);
+}
+
+.topnav_lon.bottomnav .nav_scroll .merchants_btm image {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.topnav_lon.bottomnav .nav_scroll view {
+    display: inline-block;
+    text-align: center;
+    padding-left: 0;
+    width: 33.33%;
+}
+
+.nav_scroll text {
+    font-family: PingFangSC-Regular;
+    clear: both;
+    display: block;
+    font-size: 24rpx;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.merchants_btm button {
+    visibility: unset;
+    position: unset;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: none;
+    font-size: 0;
+    line-height: 2;
+    text-align: none;
+    text-decoration: none;
+    border-radius: 0%;
+    -webkit-tap-highlight-color: transparent;
+    overflow: unset;
+    color: #000000;
+    background-color: transparent;
+    vertical-align: 0%;
+}
+
+.merchants_btm button image {
+    position: relative;
+    top: 0px;
+}
+
+.merchants_btm button .audioshare {
+    position: relative;
+    top: 0x;
+}
+
+.merchants_btm button::after {
+    width: 0;
+    height: 0;
+}
+
+.topnav_lon.bottomnav .nav_scroll view:last-child {
+    top: 0;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+button#map {
+    line-height: 2;
+    margin-top: 4px;
+}
+
+.topnav_lon.bottomnav .nav_scroll view:last-child text {
+    padding: 0;
+}

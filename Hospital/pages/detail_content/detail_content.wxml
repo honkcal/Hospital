@@ -1,0 +1,20 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<scroll-view id="middle_wrap">
+    <view class="index-detail">
+        <view class="detailtopheader">
+            <text class="h2">{{attractiondetail.ChieneseName}}</text>
+            <text class="addressWrap">{{attractiondetail.sub_title}}</text>
+
+            <text class="catWrap" id="category">·{{category}}·</text>
+            <view class="detail-top">
+               <image class="detail-banner" mode="aspectFill" src="{{attractiondetail.Image}}" wx:if="{{attractiondetail.Image!=null||attractiondetail.Image!=undefined}}"></image>
+            </view>
+            
+        </view>
+        <view class='content'>
+          <view class="jieshao" style="display:{{currentTab==0 ? 'block' : 'none'}}">
+            <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+          </view>
+        </view>
+    </view>
+</scroll-view>

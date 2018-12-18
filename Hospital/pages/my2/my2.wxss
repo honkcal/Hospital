@@ -1,0 +1,208 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rpx;
+  border-top: 3rpx solid #b7b7b7;
+}
+
+.userInfo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 72rpx;
+}
+
+.userInfo .userPhoto {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+}
+
+.userNickName {
+  line-height: 260rpx;
+  margin-left: 60rpx;
+  flex: 1;
+  font-size: 45rpx;
+}
+
+.userPhoto {
+  margin-right: 60rpx;
+}
+
+.title {
+  margin-left: 60rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.mineCollect {
+  margin-left: 60rpx;
+  margin-top: 20rpx;
+}
+
+.collectContent {
+  width: 630rpx;
+}
+
+.mineCollect .contentName {
+  font-size: 30rpx;
+  color: #888;
+}
+
+.collectContent .nav-group {
+  width: 630rpx;
+}
+
+.collectContent .nav-group image {
+  width: 630rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.btn {
+  margin: 60rpx;
+}
+
+.index-swiper {
+  width: 630rpx;
+  height: 200rpx;
+  border: 1rpx solid #ccc;
+  margin: 30rpx 60rpx;
+}
+
+.index-img {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.coupon1 {
+  width: 630rpx;
+  height: 200rpx;
+  margin: 60rpx;
+  border: 1rpx solid #ccc;
+  display: flex;
+  flex-direction: row;
+}
+
+.coupon {
+  width: 630rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  width: 430rpx;
+  display: flex;
+  border-left: 1rpx solid #ccc;
+  flex-direction: column;
+}
+
+.coupon-item {
+  background: #fff;
+  display: flex;
+  border-radius: 8rpx;
+  margin: 30rpx;
+  box-shadow: 0 10rpx 30rpx 0 rgba(185, 208, 221, 0.55);
+}
+
+.coupon-logo {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+  box-shadow: 0 4rpx 12rpx 0 rgba(155, 171, 197, 0.58);
+}
+
+.coupon-color {
+  width: 10rpx;
+  height: 158rpx;
+  position: absolute;
+  right: 30rpx;
+  border-top-right-radius: 7rpx;
+  border-bottom-right-radius: 7rpx;
+}
+
+.list {
+  flex: 1;
+  width: 100%;
+}
+
+.coupon-content {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.card_title {
+  margin-top: 20rpx;
+  font-size: 36rpx;
+}
+
+.sub_title {
+  font-size: 28rpx;
+  color: #666;
+  padding-right: 10rpx;
+}
+
+.swiper-tab {
+  margin-top: 8rpx;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  width: 33.33%;
+  color: #333;
+}
+
+.on0 {
+  color: #1296db;
+  border-bottom: 5rpx solid #1296db;
+}
+
+.coupon-list {
+  margin-top: 8rpx;
+  height: auto;
+  background-color: #fff;
+}
+
+.collection-list {
+  margin-top: 8rpx;
+  height: auto;
+  background-color: #fff;
+}
+
+.collection-logo {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  box-shadow: 0 4rpx 12rpx 0 rgba(155, 171, 197, 0.58);
+}
+
+.collection-item-top {
+  display: flex;
+}
+
+.collection-item {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8rpx;
+  margin: 30rpx;
+  box-shadow: 0 10rpx 30rpx 0 rgba(185, 208, 221, 0.55);
+}

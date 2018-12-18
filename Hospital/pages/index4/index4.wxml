@@ -1,0 +1,105 @@
+<view class="container">
+  <view class="index-header">
+    <swiper indicator-dots="{{indicatorDots}}" class="index-swiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+
+      <block wx:for-items="{{list_content}}" wx:key="" data-id="{{item.id}}">
+        <swiper-item bindtap='showDetail_content' data-id="{{item.id}}">
+          <image class="index-img" src="https://dailytech5.com/{{item.img_url}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on0' : ''}}" data-current="0" bindtap="swichNav">新闻出诊信息</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on0' : ''}}" data-current="1" bindtap="swichNav">养生小知识</view>
+  </view>
+  <view class='list'>
+    <swiper style="height:{{currentTab==0?scenicListHeight:currentTab==1?foodListHeight:currentTab==2?shoppingListHeight:guidanceListHeight}}px" interval="3000" bindchange="scroolToNav" current="{{currentTab}}">
+      <swiper-item>
+        <view class='scenic-list'>
+          <view wx:for-items="{{scenicList}}" wx:key="" bindtap='showDetail' data-id="{{item.id}}">
+            <view class="coupon-item">
+              <view class="coupon-item-top">
+                <image class="coupon-logo" src="https://dailytech5.com/{{item.img_url}}"></image>
+                <view class="coupon-content">
+                  <text class="card_title">{{item.title}}</text>
+                  <text class="sub_title">{{item.title}}</text>
+                </view>
+                <text class="distance">{{item.title}}</text>
+                <image class="img_hot" wx:if="{{item.is_hot == 1}}" src="../../images/hot.png"> </image>
+              </view>
+              <view class="coupon-item-bottom">
+
+                <view class="coupon-item-bottom1">
+                  <image class="img1" src='../../images/time.png'></image>
+                  <text> {{item.title}}</text>
+                </view>
+
+                <view class="coupon-item-bottom2">
+                  <view class="coupon-item-bottom2-img">
+                    <image class="img2" src='../../images/calendar.png'></image>
+                  </view>
+                  <view class="coupon-item-bottom2-text">
+                    <text> {{item.title}}</text>
+                  </view>
+                </view>
+
+                <view class="coupon-item-bottom3">
+                  <view class="coupon-item-bottom3-img">
+                    <image class="img3" src='../../images/payment.png'></image>
+                  </view>
+                  <view class="coupon-item-bottom3-text">
+                    <text>{{item.title}}</text>
+                  </view>
+                </view>
+
+              </view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='food-list'>
+          <view wx:for-items="{{foodList}}" wx:key="" bindtap='showDetail' data-id="{{item.id}}">
+            <view class="coupon-item">
+              <view class="coupon-item-top">
+                <image class="coupon-logo" src="https://dailytech5.com/{{item.img_url}}"></image>
+                <view class="coupon-content">
+                  <text class="card_title">{{item.title}}</text>
+                  <text class="sub_title">{{item.title}}</text>
+                </view>
+                <text class="distance">{{item.title}}</text>
+                <image class="img_hot" wx:if="{{item.is_hot == 1}}" src="../../images/hot.png"> </image>
+              </view>
+              <view class="coupon-item-bottom">
+                <view class="coupon-item-bottom1">
+                  <image class="img1" src='../../images/time.png'></image>
+                  <text> {{item.title}}</text>
+                </view>
+                <view class="coupon-item-bottom2">
+                  <view class="coupon-item-bottom2-img">
+                    <image class="img2" src='../../images/calendar.png'></image>
+                  </view>
+                  <view class="coupon-item-bottom2-text">
+                    <text> {{item.title}}</text>
+                  </view>
+                </view>
+                <view class="coupon-item-bottom3">
+                  <view class="coupon-item-bottom3-img">
+                    <image class="img3" src='../../images/payment.png'></image>
+                  </view>
+                  <view class="coupon-item-bottom3-text">
+                    <text>{{item.title}}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    
+    
+    </swiper>
+  </view>
+</view>

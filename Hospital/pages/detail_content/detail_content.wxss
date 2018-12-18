@@ -1,0 +1,849 @@
+page {
+    background: #fff;
+    height: 100%;
+}
+
+.index-detail {
+    position: relative;
+    margin-top: 19px;
+    padding-bottom: 56px;
+    background-color: #f9f9f9;
+}
+
+.header_section {
+    background: #fff;
+    box-shadow: inset 0px 11px 8px -10px #ccc;
+    height: 42px;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0px;
+}
+
+.logo {
+    display: inline-block;
+    width: 60%;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.logo image {
+    width: 80px;
+    height: 31px;
+    vertical-align: top;
+}
+
+.search_wrap {
+    width: calc(40% - 15rpx);
+    display: inline-block;
+    position: relative;
+    padding-left: 15rpx;
+    top: 0;
+    margin-top: 6px;
+    vertical-align: middle;
+}
+
+input {
+    -webkit-text-fill-color: #000;
+    font-size: 30rpx;
+}
+
+.search_wrap input {
+    color: #000;
+    font-size: 30rpx;
+    width: 80%;
+}
+
+.search_wrap input[type="text"].search {
+    display: inline-block;
+    color: #772a62!important;
+    font-size: 30rpx;
+}
+
+.search_blog {
+    background: #fff;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.search_blog input.weui-input {
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #772a62!important;
+    margin-left: 20rpx;
+    width: calc(89% - 10rpx);
+    margin-top: 3px;
+}
+
+.search_wrap image.search {
+    display: inline-block;
+    font-size: 0;
+    top: 50%;
+    right: 20rpx;
+    width: 36rpx;
+    height: 36rpx;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.logo.search-logo {
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+}
+
+.search_wrap.search-store {
+    width: calc(75% - 15rpx);
+}
+
+.src {
+    width: 84%;
+    display: inline-block;
+}
+
+.search_wrap.search-store input {
+    color: #000;
+    font-size: 30rpx;
+    width: calc(100% - 20rpx);
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 0 10rpx;
+}
+
+.detail-top {
+    width: 750rpx;
+    top: 15px;
+}
+
+.detail-top swiper {
+  width: 750rpx;
+    height: 460rpx;
+}
+
+.detail-top image {
+    width: 750rpx;
+    height: 460rpx;
+    vertical-align: top;
+}
+
+.address {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.address text{
+  font-size: 26rpx;
+  margin-left: 30rpx;
+  width:600rpx;
+}
+
+.description_bottom {
+    background: #3e3e3e;
+    width: calc(100% - 60rpx);
+    padding: 0 30rpx;
+}
+
+.desc_wrap {
+    background: #fff;
+    width: 100%;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 40rpx 0 40rpx;
+    position: relative;
+    margin-top: -25%;
+}
+
+.h2 {
+    font-size: 54rpx;
+    color: #3e3e3e;
+    width: calc(100% - 60rpx);
+    margin: 0 30rpx;
+    display: inline-block;
+    padding: 10rpx 0 0 0;
+    font-weight: bold;
+}
+
+.desc_text {
+    font-size: 26rpx;
+    color: #5C6161;
+    width: calc(100% - 60rpx);
+    display: inline-block;
+    padding: 20rpx 0;
+    line-height: 2;
+    text-justify: inter-word;
+}
+
+.des_top_btns {
+    width: calc(100% - 40rpx);
+    display: inline-block;
+    position: absolute;
+    margin-top: -4%;
+    left: 0;
+    padding: 0 20rpx;
+    top: 0;
+}
+
+.audio_list {
+    width: 100%;
+}
+
+.topnav_lon.bottomnav {
+    box-shadow: none;
+    border: 0px;
+}
+
+.play_wrap {
+    width: 100%;
+    margin-top: 50rpx;
+}
+
+.play_section {
+    width: calc(100% - 20rpx);
+    padding: 0 0 0 20rpx;
+    display: inline-block;
+}
+
+.play_section text {
+    font-size: 30rpx;
+    color: #fff;
+    display: inline-block;
+    width: calc(87% - 20rpx);
+    padding-left: 20rpx;
+    vertical-align: top;
+    line-height: 30rpx;
+    text-align: center;
+}
+
+image.play {
+    width: 9px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+image.prev {
+    width: 10px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20rpx;
+}
+
+image.next {
+    width: 10px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.audio_tag {
+    font-size: 24rpx;
+    color: #626161;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.desc_text.collapse-map {
+    height: auto;
+    overflow: visible;
+}
+
+.expand-map {
+    width: 100%;
+    display: inline-block;
+    height: 40px;
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+
+.contact {
+    width: calc(100% - 30px);
+    display: inline-block;
+    padding: 0px 15px 6px;
+}
+
+.contact view {
+    width: 100%;
+    display: inline-block;
+    padding: 0px 0px 0px;
+}
+
+.contact view image {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contact view text {
+    display: inline-block;
+    font-size: 26rpx;
+    color: #252525;
+    padding-top: 3px;
+    vertical-align: middle;
+    width: 88%;
+}
+
+button:hover,button:focus {
+    background: none;
+}
+
+button {
+    visibility: unset;
+    position: absolute;
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: none;
+    font-size: 0;
+    text-align: none;
+    text-decoration: none;
+    line-height: 0;
+    border-radius: 0%;
+    -webkit-tap-highlight-color: transparent;
+    overflow: unset;
+    color: #000;
+    background-color: transparent;
+    vertical-align: top;
+    right: 0px;
+}
+
+button image {
+    position: absolute;
+    top: 0;
+}
+
+button .audioshare {
+    position: relative;
+    top: 0;
+}
+
+button::after {
+    width: 0;
+    height: 0;
+}
+
+.audio image {
+    width: 80rpx;
+    height: 80rpx;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.audio {
+    width: 100%;
+    padding: 30rpx 0;
+    position: relative;
+}
+
+.audio text.title {
+    font-size: 26rpx;
+    color: black;
+    width: 55%;
+    display: inline-block;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.audio text.time {
+    font-size: 30rpx;
+    width: 15%;
+    display: inline-block;
+    line-height: 40px;
+    vertical-align: middle;
+    color: #B4BDC2;
+}
+
+.play_icons {
+    position: relative;
+    float: right;
+    padding-right: 10px;
+}
+
+.audio image {
+    width: 80rpx;
+    height: 80rpx;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.des_top_btns text {
+    font-size: 25rpx;
+    background: #2bb34b;
+    color: #fff;
+    padding: 14rpx 50rpx;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 14px;
+}
+
+.readmore {
+    font-size: 25rpx;
+    color: #2bb34b;
+    width: 100%;
+    display: inline-block;
+    border-top: 1px solid #ededed;
+    text-align: center;
+    padding-top: 30rpx;
+}
+
+.des_top_btns {
+    width: calc(100% - 80rpx);
+    display: inline-block;
+    position: absolute;
+    margin-top: -4%;
+    left: 0;
+    padding: 0 40rpx;
+    top: 0;
+}
+
+.des_top_btns image {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30rpx;
+}
+
+.search_wrap {
+    width: calc(40% - 15rpx);
+    display: inline-block;
+    position: relative;
+    padding-left: 15rpx;
+    vertical-align: top;
+    height: 28px;
+}
+
+.src {
+    width: 84%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search_wrap.search-store {
+    width: calc(75% - 15rpx);
+    vertical-align: top;
+    height: 28px;
+    top: 1px;
+}
+
+.search_wrap.search-store input {
+    color: #000;
+    font-size: 30rpx;
+    width: calc(100% - 20rpx);
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 0 10rpx;
+    height: 28px;
+    background: #f9f9f9;
+}
+
+.topnav_lon.bottomnav .nav_scroll view:last-child {
+    top: 0;
+}
+
+.merchants_btm button#map {
+    line-height: 1;
+    margin-top: 1px;
+}
+
+.topnav_lon.bottomnav .nav_scroll view:last-child text {
+    padding: 0;
+}
+
+.merchants_btm button {
+    line-height: 2;
+}
+
+.topnav_lon.bottomnav .nav_scroll view:last-child {
+    top: 0px;
+    margin-top: 4px;
+}
+
+.topnav_lon.bottomnav .nav_scroll view {
+    height: calc(100% - 12rpx);
+    padding: 3px 0;
+}
+
+.merchants_btm button#map {
+    line-height: 2;
+    margin-top: 0px;
+}
+
+.addressWrap {
+    display: inline-block;
+    font-size: 33rpx;
+    color: #252525;
+    vertical-align: middle;
+    width: 88%;
+    margin: 0 30rpx;
+}
+
+.catWrap {
+    display: inline-block;
+    font-size: 23rpx;
+    color: #04b32c;
+    vertical-align: middle;
+    width: 88%;
+    margin: 0 30rpx;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.topnav_lon.bottomnav {
+    background: #fff;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+    width: calc(100% - 60rpx);
+    height: 50px;
+    vertical-align: middle;
+    box-shadow: 0 0px 5px 0px #aaa;
+    padding-top: 7rpx;
+    padding-bottom: 27rpx;
+}
+
+image.loc-indicatior {
+    width: 80rpx!important;
+    height: 80rpx!important;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tab_section image.arrow-fill {
+    width: 12px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    z-index: 99999999;
+    transform: translateY(-50%);
+}
+
+.smallicons {
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.smallicons text.dwidth {
+    width: 18%;
+    padding-left: 15px;
+}
+
+.smalliconswrap {
+    width: 95%;
+    padding-left: 10px;
+}
+
+.smallicons:last-child {
+    border-bottom: none;
+}
+
+
+
+.image-icon {
+      width: 17px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+  margin-right: 20rpx;
+}
+
+.smallicons text {
+    display: inline-block;
+    font-size: 26rpx;
+    color: #252525;
+    vertical-align: top;
+}
+
+.detailtopheader {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.detaininner {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.detailsub {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.topnav_lon.bottomnav text {
+    font-size: 14px;
+    top: 11px;
+    position: relative;
+}
+
+.timertext {
+    width: 50%!important;
+}
+
+.audio .equalizer {
+    width: 35px;
+    height: 35px;
+    margin-left: 0;
+    padding-right: 23px;
+}
+
+.desc_text_toggle {
+    font-size: 25rpx;
+    color: #77EBFA;
+}
+
+.burberrybutton {
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #04b32c;
+    color: #04b32c;
+}
+
+.smallicons button.reservation[type="primary"] {
+    color: #04b32c;
+    background-color: transparent;
+    width: 18%;
+    margin-top: 26rpx;
+    border: 1px solid #2aa950;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.smallicons .button-hover[type="primary"] {
+    background-color: #04b32c;
+    color: #04b32c;
+}
+
+.smallicons button.reservation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.8;
+    border-radius: 0;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    color: #04b32c;
+    background-color: #04b32c;
+}
+
+.smallicons button.reservation::after {
+    content: " ";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0px;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.smallicons button.reservation:hover,.smallicons button.reservation:focus {
+    background: transparent;
+}
+
+.smallicons {
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.timertext {
+    width: 62%!important;
+}
+
+.tishi {
+    width: 40rpx;
+    height: 40rpx;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15rpx;
+}
+
+.yinlian {
+    width: 72rpx;
+    height: 40rpx;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15rpx;
+}
+
+.zhong {
+    width: 44rpx;
+    height: 40rpx;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15rpx;
+}
+
+.swiper-tab{  
+    margin-top: 8rpx;
+    background-color: #fff;
+    width: 100%;  
+    text-align: center; 
+    line-height: 80rpx;
+    display: flex;
+}
+
+.swiper-tab-list{  
+    font-size: 30rpx;  
+    width: 50%;  
+    color: #333;  
+}  
+.on0 { 
+  color: #1296db;  
+  border-bottom: 5rpx solid #1296db;
+  
+}
+
+.on1 { 
+  color: #1296db;  
+  border-bottom: 5rpx solid #1296db;
+}
+
+.content {
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.coupon-item {
+  height:150rpx;
+  display: flex;
+  border-radius: 8rpx;
+  margin: 30rpx;
+  box-shadow: 0 10rpx 30rpx 0 rgba(185, 208, 221, 0.55);
+}
+
+.juan-back {
+  position: absolute;
+  width: 150rpx;
+  height:150rpx;
+}
+
+.card_title {
+  position: absolute;
+  line-height: 150rpx;
+  height: 150rpx;
+  font-size: 34rpx;
+  margin-left: 40rpx;
+}
+
+.mianfei {
+  line-height: 150rpx;
+  height: 150rpx;
+  font-size: 34rpx;
+  margin-left: 45rpx;
+  color: #e8524f;
+}
+
+.xuxian {
+  border-left:4rpx dashed #eee; 
+  height:150rpx;
+  width:10rpx;
+  margin-left: 400rpx;
+}
+
+.coupon-logo {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+  box-shadow: 0 4rpx 12rpx 0 rgba(155, 171, 197, 0.58);
+}
+
+.coupon-color {
+  width: 10rpx;
+  height: 158rpx;
+  position: absolute;
+  right: 50rpx;
+  border-top-right-radius: 7rpx;
+  border-bottom-right-radius: 7rpx;
+}
+
+.coupon-content {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.sub_title {
+  font-size: 28rpx;
+  color: #666;
+}
+
+ 
+.coupon-item-bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx 0;
+}
+
+.coupon-item-bottom text {
+  font-size: 26rpx;
+  margin-left: 5rpx;
+}
+
+.coupon-item-bottom .coupon-item-bottom1 {
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  width: 100%; 
+}
+
+.coupon-item-bottom1 .img1{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+.coupon-item-bottom .coupon-item-bottom2 {
+ 
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  width: 100%;
+}
+.coupon-item-bottom2 .img2{
+  height: 30rpx;
+  width: 30rpx;
+  vertical-align: middle;
+}
+
+.coupon-item-bottom .coupon-item-bottom3 {
+
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  width: 100%;
+  
+}
+.coupon-item-bottom3 .img3{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
