@@ -64,3 +64,16 @@ E:\项目\Hospital\Hospital_backend\DTcms.DAL\bin\Debug\DTcms.Model.pdb
 E:\项目\Hospital\Hospital_backend\DTcms.DAL\obj\Debug\DTcms.DAL.csprojResolveAssemblyReference.cache
 E:\项目\Hospital\Hospital_backend\DTcms.DAL\obj\Debug\DTcms.DAL.dll
 E:\项目\Hospital\Hospital_backend\DTcms.DAL\obj\Debug\DTcms.DAL.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\bin\Debug\DTcms.DAL.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\bin\Debug\DTcms.DAL.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\bin\Debug\DTcms.Common.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\bin\Debug\DTcms.DBUtility.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\bin\Debug\DTcms.Model.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\bin\Debug\DTcms.Common.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\bin\Debug\DTcms.DBUtility.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\bin\Debug\DTcms.Model.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\obj\Debug\DTcms.DAL.csprojAssemblyReference.cache
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\obj\Debug\DTcms.DAL.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\obj\Debug\DTcms.DAL.csproj.CopyComplete
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\obj\Debug\DTcms.DAL.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DAL\obj\Debug\DTcms.DAL.pdb

@@ -40,3 +40,12 @@ E:\项目\Hospital\Hospital_backend\DTcms.DBUtility\bin\Debug\DTcms.Common.pdb
 E:\项目\Hospital\Hospital_backend\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csprojResolveAssemblyReference.cache
 E:\项目\Hospital\Hospital_backend\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
 E:\项目\Hospital\Hospital_backend\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DBUtility\bin\Debug\DTcms.Common.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DBUtility\bin\Debug\DTcms.Common.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csprojAssemblyReference.cache
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csproj.CopyComplete
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb

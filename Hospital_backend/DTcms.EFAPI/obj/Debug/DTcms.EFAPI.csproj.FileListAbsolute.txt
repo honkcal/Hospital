@@ -20,3 +20,16 @@ E:\项目\Hospital\Hospital_backend\DTcms.EFAPI\bin\Debug\zh-Hans\EntityFramewor
 E:\项目\Hospital\Hospital_backend\DTcms.EFAPI\obj\Debug\DTcms.EFAPI.csprojResolveAssemblyReference.cache
 E:\项目\Hospital\Hospital_backend\DTcms.EFAPI\obj\Debug\DTcms.EFAPI.dll
 E:\项目\Hospital\Hospital_backend\DTcms.EFAPI\obj\Debug\DTcms.EFAPI.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\bin\Debug\DTcms.EFAPI.dll.config
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\bin\Debug\DTcms.EFAPI.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\bin\Debug\DTcms.EFAPI.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\bin\Debug\EntityFramework.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\bin\Debug\EntityFramework.xml
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\obj\Debug\DTcms.EFAPI.csprojAssemblyReference.cache
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\obj\Debug\DTcms.EFAPI.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\obj\Debug\DTcms.EFAPI.csproj.CopyComplete
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\obj\Debug\DTcms.EFAPI.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.EFAPI\obj\Debug\DTcms.EFAPI.pdb

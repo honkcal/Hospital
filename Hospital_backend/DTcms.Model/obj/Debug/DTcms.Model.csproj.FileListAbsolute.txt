@@ -40,3 +40,12 @@ E:\项目\Hospital\Hospital_backend\DTcms.Model\bin\Debug\DTcms.Common.pdb
 E:\项目\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.csprojResolveAssemblyReference.cache
 E:\项目\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.dll
 E:\项目\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\bin\Debug\DTcms.Model.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\bin\Debug\DTcms.Model.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\bin\Debug\DTcms.Common.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\bin\Debug\DTcms.Common.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.csprojAssemblyReference.cache
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.csproj.CopyComplete
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.pdb

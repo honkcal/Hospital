@@ -27,3 +27,9 @@ E:\项目\Hospital\Hospital_backend\DTcms.Common\bin\Debug\DTcms.Common.pdb
 E:\项目\Hospital\Hospital_backend\DTcms.Common\obj\Debug\DTcms.Common.csprojResolveAssemblyReference.cache
 E:\项目\Hospital\Hospital_backend\DTcms.Common\obj\Debug\DTcms.Common.dll
 E:\项目\Hospital\Hospital_backend\DTcms.Common\obj\Debug\DTcms.Common.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Common\bin\Debug\DTcms.Common.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Common\bin\Debug\DTcms.Common.pdb
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Common\obj\Debug\DTcms.Common.csprojAssemblyReference.cache
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Common\obj\Debug\DTcms.Common.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Common\obj\Debug\DTcms.Common.dll
+D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Common\obj\Debug\DTcms.Common.pdb
