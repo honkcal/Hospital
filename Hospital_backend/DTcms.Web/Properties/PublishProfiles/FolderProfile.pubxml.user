@@ -335,37 +335,40 @@
       <publishTime>04/30/2017 22:54:24</publishTime>
     </File>
     <File Include="bin/DTcms.API.dll">
-      <publishTime>12/18/2018 22:53:29</publishTime>
+      <publishTime>12/19/2018 22:10:40</publishTime>
     </File>
     <File Include="bin/DTcms.BLL.dll">
-      <publishTime>12/18/2018 22:53:29</publishTime>
+      <publishTime>12/19/2018 22:10:39</publishTime>
     </File>
     <File Include="bin/DTcms.Common.dll">
-      <publishTime>12/18/2018 22:53:26</publishTime>
+      <publishTime>12/19/2018 22:10:37</publishTime>
     </File>
     <File Include="bin/DTcms.DAL.dll">
-      <publishTime>12/18/2018 22:53:28</publishTime>
+      <publishTime>12/19/2018 22:10:39</publishTime>
     </File>
     <File Include="bin/DTcms.DBUtility.dll">
-      <publishTime>12/18/2018 22:53:27</publishTime>
+      <publishTime>12/19/2018 22:10:38</publishTime>
     </File>
     <File Include="bin/DTcms.EFAPI.dll">
-      <publishTime>12/18/2018 22:53:26</publishTime>
+      <publishTime>12/20/2018 00:09:26</publishTime>
     </File>
     <File Include="bin/DTcms.EFAPI.dll.config">
       <publishTime>12/17/2018 00:02:56</publishTime>
     </File>
     <File Include="bin/DTcms.Model.dll">
-      <publishTime>12/18/2018 22:53:27</publishTime>
+      <publishTime>12/19/2018 22:10:38</publishTime>
     </File>
     <File Include="bin/DTcms.Web.dll">
-      <publishTime>12/18/2018 23:57:00</publishTime>
+      <publishTime>12/20/2018 00:09:29</publishTime>
     </File>
     <File Include="bin/DTcms.Web.UI.dll">
-      <publishTime>12/18/2018 22:53:29</publishTime>
+      <publishTime>12/19/2018 22:10:40</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
-      <publishTime>01/04/2017 00:44:16</publishTime>
+      <publishTime>12/19/2018 22:06:03</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>12/19/2018 22:06:03</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>03/19/2018 19:52:58</publishTime>
@@ -1796,7 +1799,7 @@
       <publishTime>04/15/2015 22:54:28</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/17/2018 23:03:57</publishTime>
+      <publishTime>12/19/2018 22:10:47</publishTime>
     </File>
     <File Include="xmlconfig/order.config">
       <publishTime>06/10/2017 14:59:06</publishTime>

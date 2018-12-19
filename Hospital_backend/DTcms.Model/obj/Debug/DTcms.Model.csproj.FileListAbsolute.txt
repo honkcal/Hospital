@@ -49,3 +49,10 @@ D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.
 D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.csproj.CopyComplete
 D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.dll
 D:\Documents\GitHub\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.Model\bin\Debug\DTcms.Model.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.Model\bin\Debug\DTcms.Model.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.Model\bin\Debug\DTcms.Common.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.Model\bin\Debug\DTcms.Common.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.csprojResolveAssemblyReference.cache
+E:\项目\Git\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.Model\obj\Debug\DTcms.Model.pdb

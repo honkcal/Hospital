@@ -29,8 +29,16 @@ namespace DTcms.Web.tools
                     OutPut(context, HospicalAPI.get_channel_article_news_detail(
                         DTRequest.GetFormIntValue("id")));
                     break;
+                case "get_channel_article_goods":
+                    OutPut(context, HospicalAPI.get_channel_article_goods());
+                    break;
+
+                case "get_channel_article_goods_detail":
+                    OutPut(context, HospicalAPI.get_channel_article_goods_detail(
+                        DTRequest.GetFormIntValue("id")));
+                    break;
                 #endregion
- 
+
                 #region content related
                 case "get_channel_article_content":
                     OutPut(context, HospicalAPI.get_channel_article_content());

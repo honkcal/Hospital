@@ -9,3 +9,16 @@ E:\项目\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\EntityFramework.SqlS
 E:\项目\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\zh-Hans\EntityFramework.resources.dll
 E:\项目\Hospital\Hospital_backend\DTcms.EFAPI\obj\Release\DTcms.EFAPI.dll
 E:\项目\Hospital\Hospital_backend\DTcms.EFAPI\obj\Release\DTcms.EFAPI.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\DTcms.EFAPI.dll.config
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\DTcms.EFAPI.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\DTcms.EFAPI.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\EntityFramework.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\EntityFramework.SqlServer.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\Newtonsoft.Json.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\EntityFramework.xml
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\EntityFramework.SqlServer.xml
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\obj\Release\DTcms.EFAPI.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\obj\Release\DTcms.EFAPI.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.EFAPI\obj\Release\DTcms.EFAPI.csprojResolveAssemblyReference.cache

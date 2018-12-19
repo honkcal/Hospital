@@ -61,6 +61,9 @@
     <Compile Include="dt_channel_article_content.cs">
       <DependentUpon>Hospital.tt</DependentUpon>
     </Compile>
+    <Compile Include="dt_channel_article_goods.cs">
+      <DependentUpon>Hospital.tt</DependentUpon>
+    </Compile>
     <Compile Include="dt_channel_article_news.cs">
       <DependentUpon>Hospital.tt</DependentUpon>
     </Compile>

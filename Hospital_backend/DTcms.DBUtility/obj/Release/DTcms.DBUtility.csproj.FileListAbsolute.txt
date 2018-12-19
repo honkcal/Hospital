@@ -12,3 +12,10 @@ E:\项目\Hospital\Hospital_backend\DTcms.DBUtility\bin\Release\DTcms.Common.pdb
 E:\项目\Hospital\Hospital_backend\DTcms.DBUtility\obj\Release\DTcms.DBUtility.csprojResolveAssemblyReference.cache
 E:\项目\Hospital\Hospital_backend\DTcms.DBUtility\obj\Release\DTcms.DBUtility.dll
 E:\项目\Hospital\Hospital_backend\DTcms.DBUtility\obj\Release\DTcms.DBUtility.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DBUtility\bin\Release\DTcms.DBUtility.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DBUtility\bin\Release\DTcms.DBUtility.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DBUtility\bin\Release\DTcms.Common.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DBUtility\bin\Release\DTcms.Common.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DBUtility\obj\Release\DTcms.DBUtility.csprojResolveAssemblyReference.cache
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DBUtility\obj\Release\DTcms.DBUtility.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DBUtility\obj\Release\DTcms.DBUtility.pdb

@@ -48,6 +48,44 @@
           <Property Name="like_count" Type="int" Nullable="false" />
           <Property Name="add_time" Type="datetime" Nullable="false" />
           <Property Name="update_time" Type="datetime" />
+          <Property Name="sub_title" Type="nvarchar" MaxLength="255" />
+          <Property Name="source" Type="nvarchar" MaxLength="50" />
+          <Property Name="author" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="dt_channel_article_goods">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="site_id" Type="int" Nullable="false" />
+          <Property Name="channel_id" Type="int" Nullable="false" />
+          <Property Name="category_id" Type="int" Nullable="false" />
+          <Property Name="call_index" Type="nvarchar" MaxLength="50" />
+          <Property Name="title" Type="nvarchar" MaxLength="100" />
+          <Property Name="link_url" Type="nvarchar" MaxLength="255" />
+          <Property Name="img_url" Type="nvarchar" MaxLength="255" />
+          <Property Name="seo_title" Type="nvarchar" MaxLength="255" />
+          <Property Name="seo_keywords" Type="nvarchar" MaxLength="255" />
+          <Property Name="seo_description" Type="nvarchar" MaxLength="255" />
+          <Property Name="tags" Type="nvarchar" MaxLength="500" />
+          <Property Name="zhaiyao" Type="nvarchar" MaxLength="255" />
+          <Property Name="content" Type="ntext" />
+          <Property Name="sort_id" Type="int" Nullable="false" />
+          <Property Name="click" Type="int" Nullable="false" />
+          <Property Name="status" Type="int" Nullable="false" />
+          <Property Name="is_msg" Type="int" Nullable="false" />
+          <Property Name="is_top" Type="int" Nullable="false" />
+          <Property Name="is_red" Type="int" Nullable="false" />
+          <Property Name="is_hot" Type="int" Nullable="false" />
+          <Property Name="is_slide" Type="int" Nullable="false" />
+          <Property Name="is_sys" Type="int" Nullable="false" />
+          <Property Name="user_name" Type="nvarchar" MaxLength="100" />
+          <Property Name="like_count" Type="int" Nullable="false" />
+          <Property Name="add_time" Type="datetime" Nullable="false" />
+          <Property Name="update_time" Type="datetime" />
+          <Property Name="sub_title" Type="nvarchar" MaxLength="255" />
+          <Property Name="source" Type="nvarchar" MaxLength="50" />
+          <Property Name="author" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="dt_channel_article_news">
           <Key>
@@ -121,6 +159,7 @@
         <EntityContainer Name="HospitalModelStoreContainer">
           <EntitySet Name="dt_article_albums" EntityType="Self.dt_article_albums" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="dt_channel_article_content" EntityType="Self.dt_channel_article_content" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="dt_channel_article_goods" EntityType="Self.dt_channel_article_goods" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="dt_channel_article_news" EntityType="Self.dt_channel_article_news" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="dt_users" EntityType="Self.dt_users" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
@@ -159,6 +198,9 @@
           <Property Name="like_count" Type="Int32" Nullable="false" />
           <Property Name="add_time" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="update_time" Type="DateTime" Precision="3" />
+          <Property Name="sub_title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="source" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="author" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="dt_channel_article_news">
           <Key>
@@ -200,6 +242,7 @@
           <EntitySet Name="dt_channel_article_news" EntityType="Self.dt_channel_article_news" />
           <EntitySet Name="dt_article_albums" EntityType="HospitalModel.dt_article_albums" />
           <EntitySet Name="dt_users" EntityType="HospitalModel.dt_users" />
+          <EntitySet Name="dt_channel_article_goods" EntityType="HospitalModel.dt_channel_article_goods" />
         </EntityContainer>
         <EntityType Name="dt_article_albums">
           <Key>
@@ -247,6 +290,41 @@
           <Property Name="latitude" Type="Double" />
           <Property Name="longitude" Type="Double" />
         </EntityType>
+        <EntityType Name="dt_channel_article_goods">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="site_id" Type="Int32" Nullable="false" />
+          <Property Name="channel_id" Type="Int32" Nullable="false" />
+          <Property Name="category_id" Type="Int32" Nullable="false" />
+          <Property Name="call_index" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="link_url" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="img_url" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="seo_title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="seo_keywords" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="seo_description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tags" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="zhaiyao" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="sort_id" Type="Int32" Nullable="false" />
+          <Property Name="click" Type="Int32" Nullable="false" />
+          <Property Name="status" Type="Int32" Nullable="false" />
+          <Property Name="is_msg" Type="Int32" Nullable="false" />
+          <Property Name="is_top" Type="Int32" Nullable="false" />
+          <Property Name="is_red" Type="Int32" Nullable="false" />
+          <Property Name="is_hot" Type="Int32" Nullable="false" />
+          <Property Name="is_slide" Type="Int32" Nullable="false" />
+          <Property Name="is_sys" Type="Int32" Nullable="false" />
+          <Property Name="user_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="like_count" Type="Int32" Nullable="false" />
+          <Property Name="add_time" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="update_time" Type="DateTime" Precision="3" />
+          <Property Name="sub_title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="source" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="author" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -256,6 +334,9 @@
           <EntitySetMapping Name="dt_channel_article_content">
             <EntityTypeMapping TypeName="HospitalModel.dt_channel_article_content">
               <MappingFragment StoreEntitySet="dt_channel_article_content">
+                <ScalarProperty Name="author" ColumnName="author" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="sub_title" ColumnName="sub_title" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="site_id" ColumnName="site_id" />
                 <ScalarProperty Name="channel_id" ColumnName="channel_id" />
@@ -365,6 +446,42 @@
                 <ScalarProperty Name="salt" ColumnName="salt" />
                 <ScalarProperty Name="user_name" ColumnName="user_name" />
                 <ScalarProperty Name="group_id" ColumnName="group_id" />
+                <ScalarProperty Name="site_id" ColumnName="site_id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="dt_channel_article_goods">
+            <EntityTypeMapping TypeName="HospitalModel.dt_channel_article_goods">
+              <MappingFragment StoreEntitySet="dt_channel_article_goods">
+                <ScalarProperty Name="author" ColumnName="author" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="sub_title" ColumnName="sub_title" />
+                <ScalarProperty Name="update_time" ColumnName="update_time" />
+                <ScalarProperty Name="add_time" ColumnName="add_time" />
+                <ScalarProperty Name="like_count" ColumnName="like_count" />
+                <ScalarProperty Name="user_name" ColumnName="user_name" />
+                <ScalarProperty Name="is_sys" ColumnName="is_sys" />
+                <ScalarProperty Name="is_slide" ColumnName="is_slide" />
+                <ScalarProperty Name="is_hot" ColumnName="is_hot" />
+                <ScalarProperty Name="is_red" ColumnName="is_red" />
+                <ScalarProperty Name="is_top" ColumnName="is_top" />
+                <ScalarProperty Name="is_msg" ColumnName="is_msg" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="click" ColumnName="click" />
+                <ScalarProperty Name="sort_id" ColumnName="sort_id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="zhaiyao" ColumnName="zhaiyao" />
+                <ScalarProperty Name="tags" ColumnName="tags" />
+                <ScalarProperty Name="seo_description" ColumnName="seo_description" />
+                <ScalarProperty Name="seo_keywords" ColumnName="seo_keywords" />
+                <ScalarProperty Name="seo_title" ColumnName="seo_title" />
+                <ScalarProperty Name="img_url" ColumnName="img_url" />
+                <ScalarProperty Name="link_url" ColumnName="link_url" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="call_index" ColumnName="call_index" />
+                <ScalarProperty Name="category_id" ColumnName="category_id" />
+                <ScalarProperty Name="channel_id" ColumnName="channel_id" />
                 <ScalarProperty Name="site_id" ColumnName="site_id" />
                 <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>

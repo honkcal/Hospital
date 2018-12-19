@@ -41,5 +41,8 @@ namespace DTcms.EFAPI
         public int like_count { get; set; }
         public System.DateTime add_time { get; set; }
         public Nullable<System.DateTime> update_time { get; set; }
+        public string sub_title { get; set; }
+        public string source { get; set; }
+        public string author { get; set; }
     }
 }

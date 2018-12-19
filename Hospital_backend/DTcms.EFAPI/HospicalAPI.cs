@@ -32,12 +32,12 @@ namespace DTcms.EFAPI
                             {
                                 t.id,
                                 t.title,
+                                t.sub_title,
                                 t.img_url,
-                          
                                 zhaiyao = t.zhaiyao.Length <= 37 ? t.zhaiyao : t.zhaiyao.Substring(0, 37) + "...",
                                 
                                 t.is_hot,
-
+                                t.add_time,
                                 t.source,
 
                             })
@@ -57,11 +57,12 @@ namespace DTcms.EFAPI
                            {
                                t.id,
                                t.title,
+                               t.sub_title,
                                t.img_url,
                                t.zhaiyao,
                                t.content,
                                t.update_time,
-                               
+                               t.add_time,
                                t.is_hot,
                               
                                t.source,
@@ -80,10 +81,11 @@ namespace DTcms.EFAPI
                     {
                         obj.id,
                         obj.title,
+                        obj.sub_title,
                         obj.img_url,
                         obj.zhaiyao,
                         obj.update_time,
-                       
+                        obj.add_time,
                         obj.is_hot,
                       
                         obj.source,
@@ -95,8 +97,82 @@ namespace DTcms.EFAPI
                 });
             }
         }
- 
-  
+
+
+
+        public static string get_channel_article_goods()
+        {
+            using (var db = new HospitalEntities())
+            {
+                return Obj2Json(new
+                {
+                    data = (from t in db.dt_channel_article_goods
+                            where t.status != 2
+                            orderby t.sort_id
+                            select new
+                            {
+                                t.id,
+                                t.title,
+                                t.sub_title,
+                                t.img_url,
+                                zhaiyao = t.zhaiyao.Length <= 37 ? t.zhaiyao : t.zhaiyao.Substring(0, 37) + "...",
+                                t.is_hot,
+                                t.source,
+                                t.add_time,
+                            })
+                            .ToList(),
+                    result = 1
+                });
+            }
+        }
+        public static string get_channel_article_goods_detail(int id)
+        {
+            using (var db = new HospitalEntities())
+            {
+                var obj = (from t in db.dt_channel_article_goods
+                           orderby t.sort_id
+                           where t.id == id
+                           select new
+                           {
+                               t.id,
+                               t.title,
+                               t.sub_title,
+                               t.img_url,
+                               t.zhaiyao,
+                               t.content,
+                               t.update_time,
+                               t.is_hot,
+                               t.source,
+                               t.add_time,
+                           }).FirstOrDefault();
+                var images = (from t in db.dt_article_albums
+                              from c in db.dt_channel_article_goods
+                              where t.article_id == id && t.channel_id == c.channel_id && t.article_id == c.id
+                              select new
+                              {
+                                  img_url = t.original_path.Replace("src=\"/upload", "src=\"http://guomengtech.com/upload")
+                              }).ToList();
+                return Obj2Json(new
+                {
+                    data = new
+                    {
+                        obj.id,
+                        obj.title,
+                        obj.sub_title,
+                        obj.img_url,
+                        obj.zhaiyao,
+                        obj.update_time,
+                        obj.is_hot,
+                        obj.source,
+                        obj.add_time,
+                        content = obj.content.Replace("src=\"/upload", "src=\"http://guomengtech.com/upload"),
+                        images
+                    },
+                    result = 1
+                });
+            }
+        }
+
         public static string get_channel_article_content()
         {
             using (var db = new HospitalEntities())
@@ -110,10 +186,12 @@ namespace DTcms.EFAPI
                             {
                                 t.id,
                                 t.title,
+                                t.sub_title,
                                 t.img_url,
                                 t.zhaiyao,
                                 t.is_hot,
-                                t.content
+                                t.content,
+                                t.add_time,
                             }).ToList(),
                     result = 1
                 });
@@ -130,10 +208,12 @@ namespace DTcms.EFAPI
                            {
                                t.id,
                                t.title,
+                               t.sub_title,
                                t.img_url,
                                t.zhaiyao,
                                t.content,
-                               t.update_time
+                               t.update_time,
+                               t.add_time,
                            }).FirstOrDefault();
                 var images = (from t in db.dt_article_albums
                               from c in db.dt_channel_article_content
@@ -149,9 +229,11 @@ namespace DTcms.EFAPI
                     {
                         obj.id,
                         obj.title,
+                        obj.sub_title,
                         obj.img_url,
                         obj.zhaiyao,
                         obj.update_time,
+                        obj.add_time,
                         content = obj.content.Replace("src=\"/upload", "src=\"http://guomengtech.com/upload"),
                         images
                     },

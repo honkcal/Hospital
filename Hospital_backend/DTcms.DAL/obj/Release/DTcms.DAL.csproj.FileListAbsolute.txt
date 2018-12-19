@@ -20,3 +20,14 @@ E:\项目\Hospital\Hospital_backend\DTcms.DAL\bin\Release\DTcms.Model.pdb
 E:\项目\Hospital\Hospital_backend\DTcms.DAL\obj\Release\DTcms.DAL.csprojResolveAssemblyReference.cache
 E:\项目\Hospital\Hospital_backend\DTcms.DAL\obj\Release\DTcms.DAL.dll
 E:\项目\Hospital\Hospital_backend\DTcms.DAL\obj\Release\DTcms.DAL.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DAL\bin\Release\DTcms.DAL.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DAL\bin\Release\DTcms.DAL.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DAL\bin\Release\DTcms.Common.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DAL\bin\Release\DTcms.DBUtility.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DAL\bin\Release\DTcms.Model.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DAL\bin\Release\DTcms.Common.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DAL\bin\Release\DTcms.DBUtility.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DAL\bin\Release\DTcms.Model.pdb
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DAL\obj\Release\DTcms.DAL.csprojResolveAssemblyReference.cache
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DAL\obj\Release\DTcms.DAL.dll
+E:\项目\Git\Hospital\Hospital_backend\DTcms.DAL\obj\Release\DTcms.DAL.pdb
