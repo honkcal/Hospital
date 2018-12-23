@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/index4/index4",
     "pages/logs/logs",
     "pages/my2/my2",
@@ -15,15 +14,9 @@
     "list": [
       {
         "pagePath": "pages/index4/index4",
-        "text": "发现",
+        "text": "主页",
         "iconPath": "images/home-g.png",
         "selectedIconPath": "images/home-b.png"
-      },
-      {
-        "pagePath": "pages/navigator/navigator",
-        "text": "地图",
-        "iconPath": "images/map-g.png",
-        "selectedIconPath": "images/map-b.png"
       },
       {
         "pagePath": "pages/my2/my2",

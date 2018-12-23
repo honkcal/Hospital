@@ -202,7 +202,7 @@ Page({
           method: 'POST',
           url: getApp().globalData.apiUrl,
           data: {
-            action: 'get_channel_article_news'
+            action: 'get_channel_article_goods'
           },
           header: {
             'content-type': 'application/x-www-form-urlencoded' // 默认值
@@ -296,7 +296,6 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
   },
 
   /**

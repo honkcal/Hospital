@@ -19,18 +19,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if (options.type == 0) {
-      this.setData({
-        category: '景点'
-      })
-      this.showDetail("get_channel_article_news_detail_queenstown", options.id);
-    }
-    if (options.type == 5) {
-      this.setData({
-        category: '体验皇后镇'
-      })
-      this.showDetail("get_channel_article_content_detail_queenstown", options.id);
-    }
+    this.showDetail("get_channel_article_content_detail", options.id);
   },
 
 
@@ -156,7 +145,7 @@ Page({
           //list: res.data.data,
           attractiondetail: {
             ChieneseName: res.data.data.title,
-            Image: "https://guomengtech.com/" + res.data.data.img_url,
+            Image: "https://dailytech5.com/" + res.data.data.img_url,
             haoshi: res.data.data.haoshi,
             fuwu: res.data.data.fuwu,
             calendar: res.data.data.calendar,
