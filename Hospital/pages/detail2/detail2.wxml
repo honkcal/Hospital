@@ -13,7 +13,7 @@
         <swiper indicator-dots="false" class="index-swiper" autoplay="true" interval="5000" duration="1000">
           <block wx:for-items="{{attractiondetail.images}}" wx:key="">
             <swiper-item>
-              <image mode='aspectFill' src="https://guomengtech.com{{item.img_url}}" class="index-img" />
+              <image mode='aspectFill' src="https://dailytech5.com/{{item.img_url}}" class="index-img" />
             </swiper-item>
           </block>
         </swiper>

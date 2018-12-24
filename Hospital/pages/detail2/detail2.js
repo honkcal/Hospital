@@ -21,6 +21,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    console.log('options.type: ' + options.type);
+    console.log('options.id: ' + options.id);
+    if(options.type == 0) {
+      this.showDetail("get_channel_article_news_detail", options.id);
+    } else if(options.type == 1) {
+      this.showDetail("get_channel_article_goods_detail", options.id);
+    }
     //接口B生成圆形二维码 https://api.weixin.qq.com/wxa/getwxacode?access_token=ACCESS_TOKEN
     //BODY {"scene":"0&27","page":"pages/detail2/detail2","width":430}
     var scene = decodeURIComponent(options.scene)
@@ -174,6 +181,7 @@ Page({
     })
   },
   showDetail: function(api, id) {
+    console.log('showDetail: ' + api + ' id:' + id);
     var that = this;
     wx.showToast({
       icon: "loading",

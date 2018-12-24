@@ -306,6 +306,7 @@ Page({
   },
 
   showDetail: function (e) {
+    console.log('/pages/detail2/detail2?type=' + this.data.currentTab + '&id=' + e.currentTarget.dataset.id);
     wx.navigateTo({
       url: '/pages/detail2/detail2?type=' + this.data.currentTab + '&id=' + e.currentTarget.dataset.id,
     })
